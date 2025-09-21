@@ -12,6 +12,7 @@ html, body {
 
 body {
   width: 100%;
+  position: relative;
 }
 
 @font-face {

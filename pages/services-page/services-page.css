@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 .headServices::before,
@@ -33,11 +34,13 @@
 .mainBody {
   background: linear-gradient(#ffe7f2, #ffd9f2);
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   color: white;
   text-align: center;
   font-family: Rubik One;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .health {
@@ -165,95 +168,137 @@
 /*first 3 boxes */
 
 .firstBoxes {
-  padding: 15px 9%;
-  padding-bottom: 10px;
+  padding: clamp(1rem, 4vw, 2.5rem) clamp(2%, 8vw, 9%);
+  padding-bottom: clamp(1rem, 3vw, 2rem);
+  margin: 2rem 0;
+  overflow-x: hidden;
 }
 
 .firstBoxes .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .firstBoxes .box-container .project {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border: 4px solid #fda4ba;
-  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid #fda4ba;
+  border-radius: clamp(25px, 4vw, 40px);
   background: white;
   text-align: center;
-  padding: 30px 50px;
+  padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 3vw, 2rem);
   font-family: Garet;
-  font-size: 26px;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .firstBoxes .box-container .project img {
-  height: 180px;
-  width: 270px;
-  border-radius: 30px;
+  height: clamp(120px, 15vw, 180px);
+  width: 100%;
+  max-width: 270px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  transition: transform 0.3s ease;
 }
 
 .firstBoxes .box-container .project h3 {
-  font-size: 26px;
-  padding: 5px 0;
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  padding: clamp(0.5rem, 2vw, 1rem) 0;
   color: #fd50b1;
+  font-weight: bold;
+  margin: 0;
 }
 
 .firstBoxes .box-container .project p {
-  color: #030303;
-  font-size: 14px;
-  line-height: 1.8;
+  color: #333;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0 0.5rem;
 }
 
 .firstBoxes .box-container .project:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px) scale(1.02);
+  border-color: #fd50b1;
+}
+
+.firstBoxes .box-container .project:hover img {
+  transform: scale(1.05);
 }
 
 /*2nd 3 boxes*/
 
 .secondBoxes {
-  padding: 15px 9%;
-  padding-bottom: 60px;
+  padding: clamp(1rem, 4vw, 2.5rem) clamp(2%, 8vw, 9%);
+  padding-bottom: clamp(2rem, 6vw, 4rem);
+  margin: 2rem 0;
+  overflow-x: hidden;
 }
 
 .secondBoxes .box-container2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .secondBoxes .box-container2 .project2 {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border: 4px solid #fda4ba;
-  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid #fda4ba;
+  border-radius: clamp(25px, 4vw, 40px);
   background: white;
   text-align: center;
-  padding: 30px 50px;
+  padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1rem, 3vw, 2rem);
   font-family: Garet;
-  font-size: 26px;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .secondBoxes .box-container2 .project2 img {
-  height: 180px;
-  width: 270px;
-  border-radius: 30px;
+  height: clamp(120px, 15vw, 180px);
+  width: 100%;
+  max-width: 270px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  transition: transform 0.3s ease;
 }
 
 .secondBoxes .box-container2 .project2 h3 {
   color: #fd50b1;
-  font-size: 26px;
-  padding: 5px 0;
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  padding: clamp(0.5rem, 2vw, 1rem) 0;
+  font-weight: bold;
+  margin: 0;
 }
 
 .secondBoxes .box-container2 .project2 p {
-  color: #030303;
-  font-size: 14px;
-  line-height: 1.8;
+  color: #333;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0 0.5rem;
 }
 
 .secondBoxes .box-container2 .project2:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px) scale(1.02);
+  border-color: #fd50b1;
+}
+
+.secondBoxes .box-container2 .project2:hover img {
+  transform: scale(1.05);
 }
 
 .subtract {
@@ -439,7 +484,7 @@ button:active {
   color: white;
   border: none;
   border-radius: 10px;
-  padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(0.5rem, 0.5vw, 0.5rem) clamp(1rem, 1vw, 2.5rem);
   font-family: Arial, sans-serif;
   font-size: clamp(0.9rem, 1.8vw, 1.1rem);
   cursor: pointer;
@@ -448,7 +493,7 @@ button:active {
   gap: 10px;
   position: static;
   margin-right: 2%;
-  min-width: 120px;
+  min-width: 80px;
   transform: none;
   z-index: initial;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -639,6 +684,7 @@ button:active {
   
   .mainBody {
     font-size: clamp(1rem, 4vw, 1.5rem);
+    padding: 1rem;
   }
   
   .health, .products {
@@ -662,10 +708,34 @@ button:active {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    padding: 0 4%;
   }
   
   .health-section-container .health {
     padding-top: 2vh;
+  }
+  
+  .firstBoxes, .secondBoxes {
+    padding: 1rem 4%;
+  }
+  
+  .firstBoxes .box-container,
+  .secondBoxes .box-container2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .firstBoxes .box-container .project,
+  .secondBoxes .box-container2 .project2 {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .firstBoxes .box-container .project img,
+  .secondBoxes .box-container2 .project2 img {
+    height: clamp(100px, 20vw, 150px);
+    margin: 1rem 0;
+  }
   }
   
   .cart-button {
@@ -687,5 +757,38 @@ button:active {
   /* Hide some decorative images on mobile for better performance */
   .typeshi-wallpaper {
     display: none;
+  }
+}
+
+/* Additional mobile breakpoint for very small devices */
+@media (max-width: 480px) {
+  .headServices {
+    margin-top: 30px;
+    font-size: clamp(1.2rem, 7vw, 2rem);
+  }
+  
+  .headServices::before,
+  .headServices::after {
+    width: 15%;
+  }
+  
+  .firstBoxes, .secondBoxes {
+    padding: 1rem 2%;
+  }
+  
+  .firstBoxes .box-container .project,
+  .secondBoxes .box-container2 .project2 {
+    padding: 1rem 0.5rem;
+    border-radius: 15px;
+  }
+  
+  .firstBoxes .box-container .project img,
+  .secondBoxes .box-container2 .project2 img {
+    height: clamp(80px, 25vw, 120px);
+  }
+  
+  .health-section-container,
+  .products-section-container {
+    padding: 0 2%;
   }
 }
