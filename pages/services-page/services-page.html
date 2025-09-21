@@ -20,12 +20,14 @@
     <nav class="myNav">
       <div class="logo-group">
         <!-- Added lazy loading -->
-        <img
-          src="/assets/images/global/logo2.png"
-          alt="Mujer Logo"
-          loading="lazy"
-        />
-        <h1>mujer</h1>
+        <a href="/index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+          <img
+            src="/assets/images/global/logo2.png"
+            alt="Mujer Logo"
+            loading="lazy"
+          />
+          <h1>mujer</h1>
+        </a>
       </div>
 
       <div class="navbutton-group">
@@ -70,7 +72,12 @@
   </div>
 
   <div class="mainBody"> 
-      <p class="health">Health Care</p>
+      <div class="health-section-container">
+        <p class="health">Health Care</p>
+        <button class="cart-button"  onclick="miniScreen()">
+            <span class="material-icons">shopping_cart</span> <span id="cartTotals">0</span>
+        </button>
+      </div>
       <div class="firstBoxes">
           <div class="box-container">
                   <div class="project">
@@ -101,10 +108,9 @@
                   </div>
           </div>
       </div>
-      <p class="products">Products</p>
-      <button class="cart-button"  onclick="miniScreen()">
-          <span class="material-icons">shopping_cart</span> <span id="cartTotals">0</span>
-      </button>
+      <div class="products-section-container">
+        <p class="products">Products</p>
+      </div>
 
       <div class="mini" id="cartPage">
           <img class="logoCart" src="../../assets/images/servicepage/logo.png" alt="Mujer Logo">

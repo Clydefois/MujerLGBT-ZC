@@ -2,12 +2,12 @@
 .headServices {
   margin-top: 100px;
   font-family: Rubik One, sans-serif;
-  font-size: 66px;
+  font-size: clamp(2rem, 4vw, 4rem);
   color: #fd50b1;
   text-align: center;
-  display: flex; /* Ensure horizontal layout */
-  align-items: center; /* Align vertically in the middle */
-  justify-content: center; /* Center text and lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -37,16 +37,30 @@
   color: white;
   text-align: center;
   font-family: Rubik One;
-  font-size: 36px;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
 .health {
   padding-top: 5vh;
   text-align: left;
   color: #fd50b1;
-  font-size: 2rem; /* Font size scalable */
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
   position: relative;
-  left: 2%;
+  margin: 0;
+}
+
+.health-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.health-section-container .health {
+  padding-top: 5vh;
+  flex: 1;
 }
 
 .health::before,
@@ -70,12 +84,16 @@
 }
 
 .products {
-  padding-top: 3vh;
-  text-align: left;
+  margin-bottom: 2rem;
   color: #fd50b1;
-  font-size: 2rem; /* Font size scalable */
-  position: relative;
-  left: 2%;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  text-align: left;
+  padding: 0 2%;
+}
+
+.products-section-container {
+  padding: 0 2%;
+  margin-bottom: 2rem;
 }
 
 .products::before,
@@ -295,6 +313,7 @@ button:active {
 .buttonDesign {
   background-color: #fd50b1;
   color: white;
+  margin-top: 10px;
   border-radius: 10px;
   border-color: transparent;
   font-family: Garet;
@@ -420,16 +439,20 @@ button:active {
   color: white;
   border: none;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 2vw, 1.5rem);
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between icon and text */
-  position: relative;
-  left: 90%;
-  margin-bottom: 20px;
+  gap: 10px;
+  position: static;
+  margin-right: 2%;
+  min-width: 120px;
+  transform: none;
+  z-index: initial;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
 }
 
 .cart-button i {
@@ -442,8 +465,8 @@ button:active {
 
 .cart-dropdown {
   position: absolute;
-  top: 60px; /* Below the cart button */
-  right: 10px; /* Adjust relative to the cart button */
+  top: calc(100% + 10px); /* Below the cart button */
+  right: 0; /* Align with the right edge of the cart button */
   width: 300px;
   background-color: white;
   border: 1px solid #ccc;
@@ -600,4 +623,69 @@ button:active {
   height: 100px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .headServices {
+    margin-top: 50px;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+  
+  .headServices::before,
+  .headServices::after {
+    width: 20%;
+  }
+  
+  .mainBody {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+  }
+  
+  .health, .products {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    left: 1%;
+  }
+  
+  .health::before, .products::before {
+    width: 5%;
+  }
+  
+  .health::after {
+    width: 65%;
+  }
+  
+  .products::after {
+    width: 68%;
+  }
+  
+  .health-section-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .health-section-container .health {
+    padding-top: 2vh;
+  }
+  
+  .cart-button {
+    position: static;
+    margin: 0;
+    align-self: flex-end;
+    padding: 8px 15px;
+    font-size: 14px;
+    transform: none;
+    min-width: 100px;
+  }
+  
+  .mini {
+    width: 90%;
+    right: 5%;
+    left: 5%;
+  }
+  
+  /* Hide some decorative images on mobile for better performance */
+  .typeshi-wallpaper {
+    display: none;
+  }
 }

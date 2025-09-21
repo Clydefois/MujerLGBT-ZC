@@ -5,6 +5,15 @@
   transition: 500ms;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
 @font-face {
   font-family: Aileron;
   src: url(/assets/fonts/Aileron-Bold.otf);
