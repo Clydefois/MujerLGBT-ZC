@@ -1,0 +1,894 @@
+.flexmain{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.container{
+    height: auto;
+    background-image: url('/assets/images/formspage/heroimg.png');
+    background-size: cover;
+    width: 50%;
+}
+#everycent{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 55px;
+    font-family: Garet;
+}
+#hrcent{
+    background-color: white;
+    width: 520px;
+    height: 2px;
+    border: none;
+    margin: auto;
+    margin-top: 40px;
+}
+#centp{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 60px;
+    padding-top: 10px;
+    font-family: Glacial Indifference;
+}
+.flexcontactinfo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+}
+#accicon1{
+    height: 60px;
+    margin-right: 3.3%;
+    margin-top: 45px;
+    visibility: hidden;
+}
+#accicon2{
+    height: 60px;
+    margin-left: 3.3%;
+    margin-top: 45px;
+}
+#contacthr1{
+    background-color: #cfd3da;
+    width: 40px;
+    height: 2px;
+    border: none;
+    margin-right: 7px;
+}
+#contactinfo{
+    color: #fd50b1;
+    font-family: Rubik One;
+    font-size: 17px;
+}
+#contacthr2{
+    background-color: #cfd3da;
+    width: 350px;
+    height: 2px;
+    border: none;
+    margin-left: 7px;
+}
+.contact-form{
+    height: auto;
+    width: 50%;
+    border-top: 2px solid #edf0f6;
+}
+.titlepart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:150px;
+    margin: auto;
+}
+.titlepart #linetitle1{
+    background-color: #cfd3da;
+    width: 330px;
+    height: 3px;
+    border: none;
+    margin-top: 60px;
+    margin-right: 15px;
+}
+.titlepart #title{
+    color: #fd50b1;
+    font-family: Rubik One;
+    font-size: 60px;
+    margin-top: 40px;
+}
+.titlepart #linetitle2{
+    background-color: #cfd3da;
+    width: 330px;
+    height: 3px;
+    border: none;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+.titlepart #icon{
+    max-width: 100%; 
+    max-height: 100%;
+}
+.flexemail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#emailtitle{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+}
+#email{
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flexaddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#addresstitle{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+}
+#address{
+    width: 542px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flexbdate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 15px;
+}
+#bdatetitle{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+}
+#bdate{
+    width: 100px;
+    height: 30px;
+    margin-right: 16px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+#Sextitle{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+    font-style: italic;
+}
+#SexTitleM{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 2px;
+    font-size: 13px;
+}
+#SexM{
+    margin-right: 6px;
+}
+#SexTitleF{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 2px;
+    font-size: 13px;
+}
+#SexF{
+    margin-right: 16px;
+}
+#nationalitytitle{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+}
+#nationality{
+    width: 243px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flexpayment{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+}
+#paymenthr1{
+    background-color: #cfd3da;
+    width: 41px;
+    height: 2px;
+    border: none;
+    margin-right: 7px;
+}
+#paymenttitle{
+    color: #fd50b1;
+    font-family: Rubik One;
+    font-size: 17px;
+}
+#paymenthr2{
+    background-color: #cfd3da;
+    width: 420px;
+    height: 2px;
+    border: none;
+    margin-left: 7px;
+}
+.flexcategories{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.categories1{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #e1e5ed;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categories1:hover{
+    width: 305px;
+    height: 205px;
+    border: 3px solid  #fd50b1;
+    transform: scale(1.05);
+}
+.categories1:active{
+    width: 299px;
+    height: 199px;
+    border: 1px solid  #fd50b1;
+}
+.categories2{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #e1e5ed;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categories2:hover{
+    width: 305px;
+    height: 205px;
+    border: 3px solid  #fd50b1;
+    transform: scale(1.05);
+}
+.categories2:active{
+    width: 299px;
+    height: 199px;
+    border: 1px solid  #fd50b1;
+}
+#gcash{
+   height: 160px;
+}
+#paymaya{
+    height: 110px;
+}
+.categories3{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #e1e5ed;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.categories3:hover{
+    width: 305px;
+    height: 205px;
+    border: 3px solid  #fd50b1;
+    transform: scale(1.05);
+}
+.categories3:active{
+    width: 299px;
+    height: 199px;
+    border: 1px solid  #fd50b1;
+}
+.categories4{
+    width: 300px;
+    height: 200px;
+    border: 2px solid #e1e5ed;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.categories4:hover{
+    width: 305px;
+    height: 205px;
+    border: 3px solid  #fd50b1;
+    transform: scale(1.05);
+}
+.categories4:active{
+    width: 299px;
+    height: 199px;
+    border: 1px solid  #fd50b1;
+}
+#creditcard{
+    font-family: Glacial Indifference;
+    font-size: 28px;
+    color: black;
+}
+.crediticons{
+    margin-top: 10px;
+}
+#visa{
+    height: 20px;
+}
+#mastercard{
+    height: 20px;
+}
+#bankaccount{
+    font-family: Glacial Indifference;
+    font-size: 28px;
+    color: black;
+}
+#bankicons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+#metrobank{
+    height: 35px;
+}
+#bpi{
+    height: 27px;
+    margin-bottom: 1px;
+    margin-right: 5px;
+}  
+#bpo{
+    height: 15px;
+    margin-bottom: 5px;
+}
+.card{
+    display: none;
+    animation-name: cardslide;
+    animation-duration: 1s;
+}
+@keyframes cardslide{
+    from{transform: translateY(-50px)};
+}
+.flexcardinfo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#cardinfo{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+}
+.flexcardinput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 530px;
+    margin-top: 40px;
+}
+#card-number1{
+    width: 530px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flex2card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+#card-number2{
+    width: 261px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+#card-number3{
+    width: 261px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flexcardholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 40px;
+}
+#cardname{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+}
+#card-name{
+    width: 525px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flexbilling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+#billinginput{
+    color: #646464;
+    font-family: Glacial Indifference;
+    padding-right: 8px;
+    font-size: 16px;
+    margin-bottom: 117px;
+} 
+.flexbillinginput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 548px;
+    height: auto;
+}
+#billing-address1{
+    width: 548px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+#billing-address2{
+    width: 548px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+#billing-address3{
+    width: 548px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flexbilling2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+}
+#billing-address4{
+    height: 30px;
+    width: 270px;
+    border-radius: 10px;
+    font-family: Glacial Indifference;
+    border: 1px solid #646464;
+    padding: 10px;
+    font-style: italic;
+}
+.flexsubmit{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+}
+#submit{
+    width: 300px;
+    height: 50px;
+    background-color: #f86caf;
+    color: white;
+    border: none;
+    font-family: Rubik One;
+    font-size: 15px;
+    border-radius: 30px;
+}
+#submit:hover{
+    width: 310px;
+    height: 55px;
+}
+#submit:active{
+    width: 300px;
+    height: 50px;
+}
+.flexbank{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+.banks{
+    display: none;
+    animation-name: bankslide;
+    animation-duration: 1s;
+}
+@keyframes bankslide{
+    from{transform: translateY(-35px)};
+}
+#banktitle{
+    color: #000000;
+    font-family: Glacial Indifference;
+    font-size: 40px;
+    text-align: center;
+}
+.bank1{
+    height: 100px;
+    width: 180px;
+    border: 2px solid #e1e5ed;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bank1:hover{
+    width: 182px;
+    height: 102px;
+    border: 3px solid  #fd50b1;
+    transform: scale(1.05);
+}
+.bank1:active{
+    width: 178px;
+    height: 98px;
+    border: 1px solid  #fd50b1;
+}
+.bank2{
+    height: 100px;
+    width: 180px;
+    border: 2px solid #e1e5ed;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bank2:hover{
+    width: 182px;
+    height: 102px;
+    border: 3px solid  #fd50b1;
+    transform: scale(1.05);
+}
+.bank2:active{
+    width: 178px;
+    height: 98px;
+    border: 1px solid  #fd50b1;
+}
+.bank3{
+    height: 100px;
+    width: 180px;
+    border: 2px solid #e1e5ed;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bank3:hover{
+    width: 182px;
+    height: 102px;
+    border: 3px solid  #fd50b1;
+    transform: scale(1.05);
+}
+.bank3:active{
+    width: 178px;
+    height: 98px;
+    border: 1px solid  #fd50b1;
+}
+#ig1{
+    height: 60px;
+    margin: auto;
+    display: block;
+}
+#ig2{
+    height: 60px;
+    margin: auto;
+    display: block;
+}
+#ig3{
+    height: 40px;
+    margin: auto;
+    display: block;
+}
+.flexcontactinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+}
+#accicon1 {
+  height: 60px;
+  margin-right: 50%;
+  margin-top: 45px;
+  visibility: hidden;
+}
+#accicon2 {
+  height: 60px;
+  margin-left: 50%;
+  margin-top: 45px;
+}
+#contacthr1 {
+  background-color: #cfd3da;
+  width: 40px;
+  height: 2px;
+  border: none;
+  margin-right: 7px;
+}
+#contactinfo {
+  color: #fd50b1;
+  font-family: Rubik One;
+  font-size: 17px;
+}
+#contacthr2 {
+  background-color: #cfd3da;
+  width: 350px;
+  height: 2px;
+  border: none;
+  margin-left: 7px;
+}
+.titlepart {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+.titlepart #linetitle1 {
+  background-color: #cfd3da;
+  width: 330px;
+  height: 3px;
+  border: none;
+  margin-top: 60px;
+  margin-right: 15px;
+}
+.titlepart #title {
+  color: #fd50b1;
+  font-family: Rubik One;
+  font-size: 60px;
+  margin-top: 40px;
+}
+.titlepart #linetitle2 {
+  background-color: #cfd3da;
+  width: 330px;
+  height: 3px;
+  border: none;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+.titlepart #icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+.flexemail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#emailtitle {
+  color: #646464;
+  font-family: Glacial Indifference;
+  padding-right: 8px;
+}
+#email {
+  width: 500px;
+  height: 30px;
+}
+.flexaddress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#addresstitle {
+  color: #646464;
+  font-family: Glacial Indifference;
+  padding-right: 8px;
+}
+#address {
+  width: 542px;
+  height: 30px;
+}
+.flexbdate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 15px;
+}
+#bdatetitle {
+  color: #646464;
+  font-family: Glacial Indifference;
+  padding-right: 8px;
+}
+#bdate {
+  width: 100px;
+  height: 30px;
+  margin-right: 16px;
+}
+#Sextitle {
+  color: #646464;
+  font-family: Glacial Indifference;
+  padding-right: 8px;
+}
+#SexTitleM {
+  color: #646464;
+  font-family: Glacial Indifference;
+  padding-right: 2px;
+  font-size: 13px;
+}
+#SexM {
+  margin-right: 6px;
+}
+#SexTitleF {
+  color: #646464;
+  font-family: Glacial Indifference;
+  padding-right: 2px;
+  font-size: 13px;
+}
+#SexF {
+  margin-right: 16px;
+}
+#nationalitytitle {
+  color: #646464;
+  font-family: Glacial Indifference;
+  padding-right: 8px;
+}
+#nationality {
+  width: 243px;
+  height: 30px;
+}
+.flexpayment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+}
+#paymenthr1 {
+  background-color: #cfd3da;
+  width: 41px;
+  height: 2px;
+  border: none;
+  margin-right: 7px;
+}
+#paymenttitle {
+  color: #fd50b1;
+  font-family: Rubik One;
+  font-size: 17px;
+}
+#paymenthr2 {
+  background-color: #cfd3da;
+  width: 420px;
+  height: 2px;
+  border: none;
+  margin-left: 7px;
+}
+.flexcategories {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.categories1 {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #e1e5ed;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gcash {
+  height: 160px;
+}
+#paymaya {
+  height: 110px;
+}
+.categories2 {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #e1e5ed;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#creditcard {
+  font-family: Glacial Indifference;
+  font-size: 28px;
+}
+.crediticons {
+  margin-top: 10px;
+}
+#visa {
+  height: 20px;
+}
+#mastercard {
+  height: 20px;
+}
+#bankaccount {
+  font-family: Glacial Indifference;
+  font-size: 28px;
+}
+#bankicons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#metrobank {
+  height: 35px;
+}
+#bpi {
+  height: 27px;
+  margin-bottom: 1px;
+  margin-right: 5px;
+}
+#bpo {
+  height: 15px;
+  margin-bottom: 5px;
+}

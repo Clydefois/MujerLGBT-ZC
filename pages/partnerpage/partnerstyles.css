@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  /* for icons*/
+  font-variation-settings: "FILL" 15, "wght" 300, "GRAD" 2, "opsz" 34;
+}
+/* div, span, p {
+  border: solid;
+  border-width: 1px;
+  border-color: red;
+} */
+
+.myNav {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  background-color: rgb(206, 202, 202);
+  justify-content: space-between;
+  padding: 0px 40px;
+  align-items: center;
+}
+
+.myNav ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Rubik One", sans-serif;
+}
+
+.section1 {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 100px;
+  background: url("/assets/images/global/Silhouettes-People-Holding-Gay-Pride-Symbol-Flag.jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section1::after {
+  display: flex;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(245, 88, 187, 0.4),
+    rgba(255, 182, 193, 0.2),
+    rgba(255, 182, 193, 0)
+  );
+  pointer-events: none;
+}
+
+.text-box {
+  position: absolute;
+  overflow: hidden;
+  top: 200px;
+  left: 100px;
+  padding-top: 10px;
+  padding-left: 50px;
+  height: 390px;
+  width: 500px;
+  background-color: rgba(99, 71, 87, 0.677);
+  color: rgb(255, 255, 255);
+  font-family: "garet";
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  font-size: 10px;
+  text-align: left;
+  box-shadow: 8px 14px 15px rgba(0, 0, 0, 0.9);
+}
+
+.text-box h1 {
+  font-family: "League Spartan";
+  padding-top: 50px;
+  font-size: 3.3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header-button {
+  background-color: #d7509f;
+  font-family: Garet;
+  border: none;
+  color: white;
+  font-size: 13px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 70px;
+  margin-left: 85px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-button:hover {
+  background-color: #f86caf;
+  transform: scale(1.1);
+}
+.section2 {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.right-box {
+  display: block;
+  height: 40vh;
+  width: 100%;
+}
+
+.right-box-title {
+  margin-left: 30px;
+  margin-top: 30px;
+  display: inline-block;
+  font-family: "League Spartan";
+  color: #4ea5ff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.right-box-subtitle {
+  margin-top: 40px;
+  height: 200px;
+  margin-left: 35px;
+  margin-right: 120px;
+  text-align: left;
+  font-family: Garet;
+  font-size: 16px;
+  display: inline-block;
+}
+.left-box {
+  display: block;
+  overflow: hidden;
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 60vh;
+  box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.help-spread {
+  overflow: hidden;
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.help-spread p {
+  font-family: "League Spartan";
+  font-weight: 600;
+  font-size: 40px;
+  color: #d7509f;
+}
+
+.left-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  position: relative;
+  background-image: url("/assets/images/global/rainbow.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section3-title {
+  background-color: #9b629bc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: League Spartan;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fffcfe;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shape1,
+.shape2,
+.shape3,
+.shape4 {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-top-right-radius: 120px;
+  border-top-left-radius: 120px;
+  height: 320px;
+  width: 260px;
+  background-color: white;
+  box-shadow: 0px 0px 100px rgba(188, 125, 176, 0.6);
+  transition: transform 0.3s ease;
+  cursor:pointer;
+}
+.shape1:hover, .shape2:hover, .shape3:hover, .shape4:hover,
+.shape1.clicked, .shape2.clicked, .shape3.clicked, .shape4.clicked {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+
+}
+
+.shape1 {
+  top: 35%;
+  left: 12%;
+}
+
+.shape1-img {
+  background-image: url(/assets/images/global/usericon.png);
+  background-size: cover;
+  border-radius: 50%;
+  top: 10%;
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.shape1-desc {
+  position: relative;
+  display: flex;
+  left: 10%;
+  width: 80%;
+  top: 12%;
+  height: 48%;
+}
+.shape1-name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: Rubik;
+  font-weight: bolder;
+}
+
+.shape2 {
+  top: 35%;
+  left: 32%;
+  rotate: 180deg;
+}
+.shape2-name-inversed {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-family: Rubik;
+  font-weight: bolder;
+  transform: rotate(180deg); /* Rotates the text 180 degrees */
+  text-align: center;
+  bottom:50%;
+}
+.shape2-img {
+  background-image: url(/assets/images/global/usericon.png);
+  background-size: cover;
+  top: 10%;
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(-1); 
+}
+.shape2-desc {
+  position: relative;
+  display: flex;
+  left: 10%;
+  width: 80%;
+  top: 12%;
+  height: 48%;
+}
+
+.shape3 {
+  top: 35%;
+  left: 52%;
+}
+.shape3-img {
+  background-image: url(/assets/images/global/usericon.png);
+  background-size: cover;
+  border-radius: 50%;
+  top: 10%;
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.shape3-desc {
+  position: relative;
+  display: flex;
+  left: 10%;
+  width: 80%;
+  top: 12%;
+  height: 48%;
+}
+.shape4 {
+  top: 35%;
+  left:72%;
+  rotate: 180deg;
+}
+.shape4-img {
+  background-image: url(/assets/images/global/usericon.png);
+  background-size: cover;
+  border-radius: 50%;
+  top: 10%;
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  transform: translateX(-50%) scaleY(-1);;
+  
+}
+.shape4-desc {
+  position: relative;
+  display: flex;
+  left: 10%;
+  width: 80%;
+  top: 12%;
+  height: 48%;
+}
+
+.bg-pic {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  background-image: url(/assets/partnerpic.png);
+  background-size: cover; 
+  background-position: 50% 60%;
+  filter: blur(14px);
+  border: solid;
+}
+.section4 {
+  justify-content: center;
+  background-color: #FFBDDC;
+  display: flex;
+  width: 100%;
+  height: 40vh; /* Increased height for larger circles */
+  margin: 0;
+  padding: 0;
+}
+
+.section4-border-design {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1000px;
+}
+.section4-title {
+  font-family: Rubik One;
+  position: absolute;
+  top: 5%;
+  left: 50%; 
+  transform: translateX(-50%); 
+  font-size: 24px;
+  font-weight: bold;
+  color: #d7509f; /* Updated text color */
+  display: inline-block;
+}
+.section4-logo {
+  width: 160px; 
+  height: 160px; 
+  background-color: #ddd;
+  border-radius: 50%; 
+  border: 2px solid #ccc; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  margin: 0 20px; 
+  margin-top: 100px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  cursor:pointer;
+}
+
+.section4-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for depth */
+  background-color: #ffb6c1; /* Change background color on hover */
+}
+
+
+.social-icons-inversed {
+  position: absolute;
+  display: flex;
+  margin-top: 50%;
+  width: 100%;
+  text-align: center;
+  justify-content: center; 
+  gap: 20px; 
+  transform: rotate(180deg);
+}
+
+
+
+.social-icons {
+  position: absolute;
+  display: flex;
+  margin-top: 50%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.icon {
+  display: inline;
+  width: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease; 
+}
+
+.icon:hover {
+  
+  filter: grayscale(0%); 
+  cursor: pointer; 
+}
+
+#left-nav {
+  cursor: pointer;
+  opacity: 80%;
+  font-size: 50px;
+  color: #fffdfe;
+  margin: 0 160px;
+  width: auto;
+  height: auto;
+  rotate: 180deg;
+  transform: rotate(180deg);
+}
+#right-nav {
+  cursor: pointer;
+  opacity: 80%;
+  font-size: 50px;
+  color: #f6f6f6;
+  margin: 0 160px;
+  width: auto;
+  height: auto;
+  transform: rotate(180deg);
+}
+
+#right-nav:hover{
+  transform: scale(2.0);
+  opacity: 80%;
+}
+#left-nav:hover {
+  transform: scale(2.0); 
+  rotate: 360deg;
+  opacity: 80%;
+}
+#right-nav:active {
+  transform: rotate(180deg);
+  transform: scale(2.0);
+  opacity: 50%;
+}
+#left-nav:active {
+  transform: rotate(180deg);
+  transform: scale(2.0);
+  opacity: 50%;
+}
+
+
+/* FOOTER SECTION*/
+footer {
+  background-color: #f86caf;
+  color: white;
+  padding: 20px 40px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: white;
+}
+
+.footer-links h3 {
+  font-family: Garet;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-links ul li a {
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    width: 90%;
+    top: 15%;
+  }
+
+  .header-button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.movable-image {
+  width: 80px;
+}

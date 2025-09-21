@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/app.css" />
+    <link rel="stylesheet" href="/pages/headerfooter/headfoot.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/global/logo2.png"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="services-page.css">
+
+
+    <title>Mujer - Services</title>
+  </head>
+  <body>
+    <nav class="myNav">
+      <div class="logo-group">
+        <!-- Added lazy loading -->
+        <img
+          src="/assets/images/global/logo2.png"
+          alt="Mujer Logo"
+          loading="lazy"
+        />
+        <h1>mujer</h1>
+      </div>
+
+      <div class="navbutton-group">
+        <button id="homebtn" class="homebtn">HOME</button>
+        <div class="dropdown">
+          <button class="dropbtn">
+            ABOUT US<i
+              ><img src="/assets/images/global/downchevron.png" loading="lazy"
+            /></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" id="servicesLink">SERVICES</a>
+            <a href="#" id="eventsLink">EVENTS</a>
+            <a id="partnersLink" href="#">PARTNERS</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            JOIN US<i
+              ><img src="/assets/images/global/downchevron.png" loading="lazy"
+            /></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" id="donateLink">DONATE</a>
+            <a href="#" id="applicationLink">OPENINGS</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            OTHER WORKS<i
+              ><img src="/assets/images/global/downchevron.png" loading="lazy"
+            /></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#" id="otherworksLink">NEWSLETTER</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="headContainer">
+      <p class = "headServices">SERVICES</p>
+  </div>
+
+  <div class="mainBody"> 
+      <p class="health">Health Care</p>
+      <div class="firstBoxes">
+          <div class="box-container">
+                  <div class="project">
+                      <h3>HIV TESTING</h3>
+                      <hr>
+                      <img src="../../assets/images/servicepage/hiv.jpg" alt="Hiv Testing">
+                      <p>Mujer Organization offers free, confidential HIV testing to help you stay informed and healthy. Know your status, take control of your health, and protect your community. Get tested today—because your health matters!</p>
+                      <hr>
+                      <button class = "buttonDesign" id="hiv">For more info</button>
+                  </div>
+  
+                  <div class="project">
+                      <h3>COVID - 19 TEST</h3>
+                      <hr>
+                      <img src="../../assets/images/servicepage/covid.jfif" alt="Covid">
+                      <p>Mujer Organization provides free, confidential COVID-19 testing to help keep you and your community safe. Stay informed, protect your loved ones, and take control of your health. Get tested today—your safety matters!</p>
+                      <hr>
+                      <button class = "buttonDesign" id = "covid">For more info</button>
+                  </div>
+  
+                  <div class="project">
+                      <h3>MONKEYPOX TEST</h3>
+                      <hr>
+                      <img src="../../assets/images/servicepage/monkey.jfif" alt="MonkeyPox">
+                      <p>Mujer Organization offers free, confidential monkeypox testing to help protect your health and the community. Stay informed, get tested, and take action to keep everyone safe. Your health matters—get tested today!</p>
+                      <hr>
+                      <button class = "buttonDesign" id="monkey">For more info</button>
+                  </div>
+          </div>
+      </div>
+      <p class="products">Products</p>
+      <button class="cart-button"  onclick="miniScreen()">
+          <span class="material-icons">shopping_cart</span> <span id="cartTotals">0</span>
+      </button>
+
+      <div class="mini" id="cartPage">
+          <img class="logoCart" src="../../assets/images/servicepage/logo.png" alt="Mujer Logo">
+          <p><b>Mujer's Cart</b></span></p>
+          
+          <div class="cartProduct1">
+              <img src="../../assets/images/servicepage/condom.jfif" alt="condoms">
+              <div class = "cpInfo">
+                  <div class="itemName"><p><span id = "product1">Pride Condoms</span></p></div>
+                  <div class="itemAmount"><p>₱ 150</p></div>
+              </div>
+              <div class="quantityDesign">
+                  <button onclick="subCart('cprod1', '.cartProduct1')">-</button>
+                  <input type="number" value="1" id= "ctotal1" name="condoms" readonly>
+                  <button onclick="addCart('cprod1')">+</button>
+                </div>
+          </div>
+
+          <div class="cartProduct2">
+              <img src="../../assets/images/servicepage/lubricant.jpg" alt="Lubricant">
+              <div class = "cpInfo">
+                  <div class="itemName"><p><span id = "product1">Pride Lubricants</span></p></div>
+                  <div class="itemAmount"><p>₱ 150</p></div>
+              </div>
+              <div class="quantityDesign">
+                  <button onclick="subCart('cprod2', '.cartProduct2')">-</button>
+                  <input type="number" value="1" id = "ctotal2" name="lubri" readonly>
+                  <button onclick="addCart('cprod2')">+</button>
+                </div>
+          </div>
+
+          <div class="cartProduct3">
+              <img src="../../assets/images/servicepage/pride.jpg" alt="Pride shirt">
+              <div class = "cpInfo">
+                  <div class="itemName"><p><span id = "product1">Pride Shirt</span></p></div>
+                  <div class="itemAmount"><p>₱ 150</p></div>
+              </div>
+              <div class="quantityDesign">
+                  <button onclick="subCart('cprod3', '.cartProduct3')">-</button>
+                  <input type="number" value="1" id = "ctotal3" name="shirts" readonly>
+                  <button onclick="addCart('cprod3')">+</button>
+                </div>
+          </div>
+
+          <p class="totalStyle">Total: ₱ <span id = "totalqueue">0</span></p>
+          <button class="checkoutDesign">Checkout</button>
+      </div>
+
+
+      <div class="secondBoxes">
+          <div class="box-container2">
+                  <div class="project2">
+                      <h3>Pride Condoms</h3>
+                      <hr>
+                      <img src="../../assets/images/servicepage/condom.jfif" alt="Condoms">
+                      <p>Stock: 89</p>
+                      <p> <span style="font-size: 25px; font-weight: bold;">PHP 150</span></p>
+                      <hr>
+                      <p>Pride Condoms provide reliable protection with a message of inclusivity and empowerment. Designed for comfort and safety, they help you protect yourself and your partner while embracing your true identity. Stay safe, stay proud, and love without limits!</p>
+                      <hr>
+                      <button class="subtract" onclick="subCart1('CondomTotal')">-</button>
+                      <input type="number" value="1" class="total" id="CondomTotal" name="num" readonly>
+                      <button class="add" onclick="addCart1('CondomTotal')">+</button>
+                      <button class="cart" onclick= "addToCart ('condom', '.cartProduct1')">
+                          <i class="fas fa-shopping-cart"></i> Add to Cart
+                      </button>
+                  </div>
+  
+                  <div class="project2">
+                      <h3>Pride Lubricant</h3>
+                      <hr>
+                      <img src="../../assets/images/servicepage/lubricant.jpg" alt="Lubricant">
+                      <p>Stock: 89</p>
+                      <p> <span style="font-size: 25px; font-weight: bold;">PHP 150</span></p>
+                      <hr>
+                      <p>Pride Lubricant enhances intimacy with a smooth, long-lasting formula designed for comfort and pleasure. Safe for all skin types, it ensures a more enjoyable experience while supporting your health and wellbeing. Glide into pleasure with confidence!
+                          <hr>
+                      <button class="subtract" onclick="subCart1('LubTotal')">-</button>
+                      <input type="number" value="1" class="total" id ="LubTotal" name="num" readonly>
+                      <button class="add" onclick="addCart1('LubTotal')">+</button>
+                      <button class="cart" onclick="addToCart ('lubricant', '.cartProduct2')">
+                          <i class="fas fa-shopping-cart"></i> Add to Cart
+                      </button>
+                      </p>
+                  </div>
+  
+                  <div class="project2">
+                      <h3>Pride T-Shirt</h3>
+                      <hr>
+                      <img src="../../assets/images/servicepage/pride.jpg" alt="Pride Shirt">
+                      <p>Stock: 89</p>
+                      <p> <span style="font-size: 25px; font-weight: bold;">PHP 150</span></p>
+                      <hr>
+                      <p>Pride T-Shirt celebrates your authentic self with vibrant colors and a message of inclusivity. Made for comfort and style, it’s perfect for showing your support for the LGBTQ+ community. Wear your pride, spread love, and stand strong!
+                      <hr>
+                      <button class="subtract" onclick="subCart1('ShirtTotal')">-</button>
+                      <input type="number" value="1" class="total" id ="ShirtTotal" name="num" readonly>
+                      <button class="add" onclick="addCart1('ShirtTotal')">+</button>
+                      <button class= "cart" onclick="addToCart ('pshirt', '.cartProduct3')">
+                          <i class="fas fa-shopping-cart"></i> Add to Cart
+                      </button>
+                      </p>
+                  </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="modalHiv" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="textRight">
+              <h2>HIV Test</h2>
+              <img src="../../assets/images/servicepage/hiv.jpg" alt="HIV">
+              <button>SCHEDULE NOW</button>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="textLeft">
+              <p>Mujer Organization offers free and confidential HIV testing to help you take control of your health. Our testing process is simple, quick, and private, with results available in as little as 20 minutes. Whether you choose a rapid test using a fingerstick or oral swab, or a standard blood test, our professional staff is here to support you throughout the entire process. After your test, we provide confidential counseling to discuss your results and offer guidance on next steps. Early detection is key, as it allows you to start treatment right away, which can keep you healthy and prevent the virus from progressing. Knowing your HIV status not only helps you take care of yourself but also allows you to protect your community by practicing safer behaviors. Get tested today—because your health matters to you, your loved ones, and your community.</p>
+              <img class="logoPos" src="logo.png" alt="Mujer Logo">
+          </div>
+      </div>
+  </div>
+
+  <div id="modalCovid" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="textRight">
+              <h2>COVID-19 Test</h2>
+              <img src="../../assets/images/servicepage/covid.jfif" alt="COVID">
+              <button>SCHEDULE NOW</button>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="textLeft">
+              <p>Mujer Organization provides free and confidential COVID-19 testing to help you stay safe and informed. Our testing services are fast, reliable, and designed to prioritize your privacy. Whether you need a rapid antigen test for quick results or a PCR test for added accuracy, our trained staff ensures a smooth and supportive experience. Knowing your COVID-19 status is a vital step in protecting yourself and others, especially during times of uncertainty. We also offer post-test guidance to help you make informed decisions about isolation, treatment, or preventative measures. Don’t wait—get tested today to safeguard your health and contribute to the safety of your community.</p>
+              <img class="../../assets/images/servicepage/logoPos" src="logo.png" alt="Mujer Logo">
+          </div>
+      </div>
+  </div>
+  
+  <div id="modalMonkey" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="textRight">
+              <h2>Monkeypox Test</h2>
+              <img src="../../assets/images/servicepage/monkey.jfif" alt="MONKEY">
+              <button>SCHEDULE NOW</button>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="textLeft">
+              <p>Mujer Organization offers free and confidential monkeypox testing to help you protect your health and your community. Our testing process is simple, quick, and conducted with the utmost privacy to ensure your comfort and peace of mind. Whether you are experiencing symptoms or need to confirm your status, our professional staff is here to guide you every step of the way. Early detection is crucial for effective treatment and prevention of further spread. After testing, we provide personalized counseling to help you understand your results and plan your next steps. Taking action not only safeguards your health but also helps protect those around you. Get tested today—because your well-being matters to you, your loved ones, and your community.</p>
+              <img class="logoPos" src="../../assets/images/servicepage/logo.png" alt="Mujer Logo">
+          </div>
+      </div>
+  </div>
+
+
+
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <!-- Added lazy loading -->
+        <img
+          src="/assets/images/global/footerlogo.png"
+          alt="Mujer Logo"
+          loading="lazy"
+        />
+        <div class="vertical-line"></div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i><img src="/assets/images/global/fb.png"></i><a href="https://www.facebook.com/MujerLGBT">Facebook</a></li>
+            <li><i><img src="/assets/images/global/ig.png"></i><a href="https://www.instagram.com/mujerph/">Instagram</a></li>
+            <li><i><img src="/assets/images/global/email.png"></i><a href="https://mail.google.com/">E-Mail</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="/pages/services-page/services-page.html">Services</a></li>
+            <li><a href="/pages/events-page/events.html">Events</a></li>
+            <li><a href="/pages/partnerpage/partner.html">Partners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Join Us</h3>
+          <ul>
+            <li><a href="/pages/forms-page/donation-form.html">Donate</a></li>
+            <li><a href="/pages/forms-page/application-form.html">Openings</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Other Works</h3>
+          <ul>
+            <li><a href="/pages/other-works-page/other-works.html">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright Mujer 2024</p>
+      </div>
+    </footer>
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/services.js"></script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/app.css" />
+    <link rel="stylesheet" href="/pages/headerfooter/headfoot.css" />
+    <link rel="stylesheet" href="/pages/forms-page/donation-form.css" />
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="../../assets/images/global/logo2.png"
+  />
+    <title>Mujer - Donate</title>
+
+</head>
+<body>
+  <nav class="myNav">
+    <div class="logo-group">
+      <!-- Added lazy loading -->
+      <img
+        src="/assets/images/global/logo2.png"
+        alt="Mujer Logo"
+        loading="lazy"
+      />
+      <h1>mujer</h1>
+    </div>
+
+    <div class="navbutton-group">
+      <button id="homebtn" class="homebtn">HOME</button>
+      <div class="dropdown">
+        <button class="dropbtn">
+          ABOUT US<i
+            ><img src="/assets/images/global/downchevron.png" loading="lazy"
+          /></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" id="servicesLink">SERVICES</a>
+          <a href="#" id="eventsLink">EVENTS</a>
+          <a id="partnersLink" href="#">PARTNERS</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          JOIN US<i
+            ><img src="/assets/images/global/downchevron.png" loading="lazy"
+          /></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" id="donateLink">DONATE</a>
+          <a href="#" id="applicationLink">OPENINGS</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          OTHER WORKS<i
+            ><img src="/assets/images/global/downchevron.png" loading="lazy"
+          /></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" id="otherworksLink">NEWSLETTER</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+    
+    <div class="titlepart">
+        <a href="#" target="_blank">
+        <img id="accicon1" src="/assets/images/formspage/output-onlinepngtools (1).png">
+        </a>
+        <hr id="linetitle1">
+        <h1 id="title">DONATIONS</h1>
+        <hr id="linetitle2">
+        <a href="/pages/forms-page/application-form.html" target="_blank">
+        <img id="accicon2" src="/assets/images/formspage/output-onlinepngtools (1).png">
+        </a>
+    </div>
+    
+<div class="flexmain">
+    <div class="container">
+      <h1 id="everycent">EVERY CENT COUNTS.</h1>
+      <hr id="hrcent">
+      <p id="centp">Donating to nonprofits such as Mujer allows us to operate effectively and continue our mission of empowering communities, providing essential services, and making a lasting impact on those in need.</p>
+    </div>
+    <div class="contact-form">
+        <div class="flexcontactinfo">
+            <hr id="contacthr1">
+            <h1 id="contactinfo">Contact Information</h2>
+            <hr id="contacthr2">
+        </div>
+            <form action="#" onsubmit="validateForm(event)">
+              <div class="flexemail">
+                <label id="emailtitle" for="email">Email/Contact Number</label>
+                <input type="text" id="email" name="email" placeholder=" support@example.com" required>
+                <div class="error-message" id="email-error" style="display:none; color: red;">Email is required.</div><br><br>
+              </div>
+
+              <div class="flexaddress">
+                <label id="addresstitle" for="address" >Location Address</label>
+                <input type="text" id="address" name="address" placeholder=" 1234 Elm Street, Springfield, IL 62701, United States" required>
+                <div class="error-message" id="address-error" style="display:none; color: red;">Address is required.</div><br><br>
+              </div>
+              
+              <div class="flexbdate">
+                <label id="bdatetitle" for="bdate">Birth Date</label>
+                <input type="date" id="bdate" name="bdate" required>
+                <div class="error-message" id="bdate-error" style="display:none; color: red;">Birth date is required.</div>
+                <label id="Sextitle"for="Sex">Sex</label>
+                <label id="SexTitleM"for="Sex">Male</label>
+                <input type="radio" id="SexM" name="Sex" value="Sex" required>
+                <label id="SexTitleF"for="Sex">Female</label>
+                <input type="radio" id="SexF" name="Sex" value="Sex" required>
+                <div class="error-message" id="sex-error" style="display:none; color: red;">Please select sex.</div>
+                <label id="nationalitytitle" for="nationality">Nationality</label>
+                <input type="text" id="nationality" name="nationality" placeholder=" American" required>
+                <div class="error-message" id="nationality-error" style="display:none; color: red;">Nationality is required.</div>
+              </div>
+
+              <div class="flexpayment">
+                <hr id="paymenthr1">
+                <h3 id="paymenttitle">Payment Method</h3>
+                <hr id="paymenthr2">
+              </div>
+
+              <div class="flexcategories">
+                <a href="https://m.gcash.com/gcash-login-web/index.html#/" target="_blank">
+                <div class="categories1">
+                   <img id="gcash" src="/assets/images/formspage/gcashlogo.png">
+                </div>
+              </a>
+              <a href="https://payout.maya.ph/" target="_blank">
+                <div class="categories2">
+                   <img id="paymaya" src="/assets/images/formspage/paymayalogo.png">
+                </div>
+              </a>
+              </div>
+
+              <div class="flexcategories">
+                <div class="categories3">
+                   <h1 id="creditcard">Debit/Credit Card</h1>
+                   <div class="crediticons">
+                    <img id="visa" src="/assets/images/formspage/visalogo.png">
+                    <img id="mastercard" src="/assets/images/formspage/mastercardlogo.png">
+                   </div>
+                </div>
+                <div class="categories4">
+                   <h1 id="bankaccount">Bank Account</h1>
+                   <div class="bankicons">
+                    <img id="metrobank" src="/assets/images/formspage/metrobanklogo.png">
+                    <img id="bpi" src="/assets/images/formspage/bpilogo.png">
+                    <img id="bpo" src="/assets/images/formspage/bdologo.png">
+                </div>
+                </div>
+              </div>
+              <br>
+              
+              <div class="banks">
+                <h1 id="banktitle">Banks</h1>
+                <br>
+                <div class="flexbank">
+                 <a href="https://onlinebanking.metrobank.com.ph/signin" target="_blank">
+                  <div class="bank1">
+                    <img id="ig1" src="/assets/images/formspage/metrobanklogo.png">
+                  </div>
+                 </a>
+                  <a href="https://online.bpi.com.ph/auth/realms/BPI/protocol/openid-connect/auth?response_type=code&client_id=bb-web-client&state=OWVaWFJMR29zNFMzODJidlhqS1AyQ2I2bXdjVVllM0ZRakMtLVNocFNhV0Fv&redirect_uri=https%3A%2F%2Fonline.bpi.com.ph%2Flogin&scope=openid%20profile%20email%20offline_access%20api&code_challenge=T6A85ZYEIAvmjXBDC6sH298IWIiFXUbUUwAdMlxUNVM&code_challenge_method=S256&nonce=OWVaWFJMR29zNFMzODJidlhqS1AyQ2I2bXdjVVllM0ZRakMtLVNocFNhV0Fv" target="_blank">
+                  <div class="bank2">
+                    <img id="ig2" src="/assets/images/formspage/bpilogo.png">
+                  </div>
+                 </a>
+                  <a href="https://online.bdo.com.ph/sso/login/wicket:interface/:0:loginUnifiedPanel:loginForm::IFormSubmitListener::" target="_blank">
+                  <div class="bank3">
+                    <img id="ig3" src="/assets/images/formspage/bdologo.png">
+                  </div>
+                 </a>
+                </div>
+              </div>
+              <br>
+                <div class="card">
+                  <div class="flexcardinfo">
+                    <label id="cardinfo" for="card-number">Card Information </label>
+                    <div class="flexcardinput">
+                      <input type="number" id="card-number1" name="card-number" placeholder=" 5167 6027 5071 8646">
+                      <div class="flex2card">
+                        <input type="number" id="card-number2" name="card-number" placeholder=" 07 / 29">
+                        <input type="number" id="card-number3" name="card-number" placeholder=" 836">
+                      </div>
+                    </div>
+                    <div class="error-message" id="card-info-error" style="display:none; color: red;">Card information is required.</div>
+                  </div>
+                  <div class="flexcardholder">
+                    <label id="cardname" for="card-name">Cardholder Name </label>
+                    <input type="text" id="card-name" name="card-name" placeholder=" Johnston Comin">
+                    <div class="error-message" id="card-name-error" style="display:none; color: red;">Cardholder name is required.</div>
+                  </div>
+                  <div class="flexbilling"> 
+                    <label id="billinginput" for="billing-address">Billing Address </label>
+                    <div class="flexbillinginput">
+                      <input type="text" id="billing-address1" name="billing-address" placeholder=" United States" required>
+                      <input type="text" id="billing-address2" name="billing-address" placeholder=" 4th street" required>
+                      <input type="text" id="billing-address3" name="billing-address" placeholder=" Address line 2" required>
+                      <div class="flexbilling2">
+                        <input type="number" id="billing-address4" name="billing-address" placeholder=" 75600">
+                        <input type="text" id="billing-address4" name="billing-address" placeholder=" New Mexico">
+                      </div>
+                    </div>
+                    <div class="error-message" id="billing-address-error" style="display:none; color: red;">Billing address is required.</div>
+                  </div>
+                  <div class="flexsubmit">
+                  <input id="submit" type="submit" value="Submit Payment">
+                  </div>
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-logo">
+        <!-- Added lazy loading -->
+        <img
+          src="/assets/images/global/footerlogo.png"
+          alt="Mujer Logo"
+          loading="lazy"
+        />
+        <div class="vertical-line"></div>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i><img src="/assets/images/global/fb.png"></i><a href="https://www.facebook.com/MujerLGBT">Facebook</a></li>
+            <li><i><img src="/assets/images/global/ig.png"></i><a href="https://www.instagram.com/mujerph/">Instagram</a></li>
+            <li><i><img src="/assets/images/global/email.png"></i><a href="https://mail.google.com/">E-Mail</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="/pages/services-page/services-page.html">Services</a></li>
+            <li><a href="/pages/events-page/events.html">Events</a></li>
+            <li><a href="/pages/partnerpage/partner.html">Partners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Join Us</h3>
+          <ul>
+            <li><a href="/pages/forms-page/donation-form.html">Donate</a></li>
+            <li><a href="/pages/forms-page/application-form.html">Openings</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Other Works</h3>
+          <ul>
+            <li><a href="/pages/other-works-page/other-works.html">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright Mujer 2024</p>
+      </div>
+    </footer>
+    <script src="../../scripts/main.js"></script>
+    <script src="/scripts/donation.js"></script>
+</body>
+</html>

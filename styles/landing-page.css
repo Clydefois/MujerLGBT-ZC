@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+One&display=swap");
+
+.myNav {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  background-color: rgb(206, 202, 202);
+  justify-content: space-between;
+  padding: 0px 40px;
+  align-items: center;
+}
+.myNav ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Rubik One", sans-serif;
+}
+.section-1 {
+  background: url(../assets/images/landingpage/1.png);
+  width: 100%;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+  transition: 500ms smooth ease-in;
+  transition: background-image 1s ease-in-out; /* Smooth transition */
+}
+
+.header-container {
+  width: 100%;
+  transition: 1000ms smooth ease-in-out;
+  position: absolute;
+  font-size: 4.17vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bolder;
+  top: 30%;
+  left: 50%;
+  color: #fd50b1;
+}
+
+progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #fd50b1;
+  color: #fd50b1;
+  border: none;
+}
+progress::-webkit-progress-value {
+  background-color: #fd50b1;
+  transition: width 0.1s ease-in-out; /* Smooth transition */
+}
+progress::-moz-progress-bar {
+  background-color: #fd50b1;
+  transition: width 0.1s ease-in-out; /* Smooth transition */
+}
+
+.header-container span {
+  color: white;
+}
+
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 300px;
+  position: relative;
+}
+.section-2 .typeshi-wallpaper {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -13%;
+  height: 100vh;
+}
+
+.section-2-header-container {
+  display: flex;
+  flex-direction: row;
+  color: #fd50b1;
+  width: 100%;
+  text-align: center;
+  padding: 60px 50px;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 36px; */
+  font-size: 1.88vw; /*Always convert to vw*/
+}
+.section-2-header-container hr {
+  flex: 1;
+  border: none;
+  border-top: 2px solid #f86caf;
+  margin: 0px 40px;
+}
+.section-2 .grid-container {
+  display: flex;
+  /* background-color: rgb(0, 255, 55); */
+  height: 90%;
+  padding: 30px;
+
+  width: 100%;
+  flex-direction: row;
+}
+.card {
+  position: relative;
+  transition: 500ms;
+}
+.card:hover {
+  background-color: #fd50b1;
+  border: 1px solid black;
+}
+.card-text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: 500ms;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Garet", sans-serif;
+}
+
+.card:hover img {
+  display: none;
+  transition: 500ms;
+  transition: 500ms ease-in-out;
+}
+
+.card:hover .card-text {
+  display: block;
+  transition: 500ms ease-in-out;
+}
+.card-text:hover {
+  cursor: default;
+}
+
+.d1 {
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+}
+.d1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.d2 {
+  width: 60%;
+  height: 100%;
+  /* background-color: #fd50b1; */
+  padding: 0px 30px;
+}
+
+.d3 {
+  width: 100%;
+  height: 70%;
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 20px;
+  gap: 20px;
+  overflow: hidden;
+}
+.d3 > div {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  border-radius: 20px;
+  max-height: 100%;
+  position: relative;
+}
+
+.d3 > div > img {
+  object-fit: cover;
+  width: 100%;
+  transform: scale(1.5);
+  position: absolute;
+}
+.d3 > div:hover {
+  border: 5px solid #fd50b1;
+}
+.d4 {
+  border: 2px solid grey;
+
+  width: 95%;
+  height: 27.5%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.d4:hover {
+  border: 5px solid #fd50b1;
+}
+
+.d4 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.d8 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.d-head {
+  z-index: 3;
+}
+.section-3 {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+.section-3-header-container {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px;
+  color: #fd50b1;
+  font-size: 1.88vw; /*Always convert to vw*/
+}
+.section-3 .image-container {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  width: 30%;
+  border-radius: 50%;
+  height: 50vh;
+}
+.section-3 .image-container img {
+  width: 100%;
+  transform: scale(1.2);
+  height: 100%;
+  object-fit: cover;
+}
+.random-ahh-box {
+  position: absolute;
+  background-color: white;
+  top: 35%;
+  left: 00%;
+  width: 80%;
+  height: 40vh;
+  /* padding: 30px; */
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 10%;
+  border: 15px #fd50b1 solid;
+  vertical-align: middle;
+  color: black;
+  font-weight: 100;
+  font-family: "Garet", sans-serif;
+}
+
+.random-ahh-box h1 {
+  font-family: "Garet", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.section-4 {
+  overflow: hidden;
+  width: 100%;
+  height: 90vh;
+  background: url(/assets/images/landingpage/1.png);
+}
+
+.section-4 h1 {
+  color: white;
+  font-size: 1.88vw; /*Always convert to vw*/
+}
+.section-4-body-container {
+  width: 100%;
+  height: 80%;
+  margin: 5% 0px;
+  /* background-color: #fd50b1; */
+  background: linear-gradient(to right, #fd50b1, white);
+  z-index: 99;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-4-card {
+  font-family: "Garet", sans-serif;
+  border-radius: 15px;
+  width: 80%;
+  margin: 13px 10%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+.section-4-card > div {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-4-card > div > div {
+  height: 33.33%;
+  width: 100%;
+}
+.card-1-header-container h2 {
+  font-size: 5.21vw;
+}
+
+.card-1-header-container p {
+  font-size: 2rem;
+}
+.section-4 img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Section 5 */
+.section-5 {
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+}

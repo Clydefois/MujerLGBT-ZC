@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 500ms;
+}
+
+@font-face {
+  font-family: Aileron;
+  src: url(/assets/fonts/Aileron-Bold.otf);
+}
+
+@font-face {
+  font-family: Glacial Indifference;
+  src: url(/assets/fonts/GlacialIndifference-Regular.otf);
+}
+
+@font-face {
+  font-family: Glacial Indifference;
+  src: url(/assets/fonts/GlacialIndifference-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Garet;
+  src: url(/assets/fonts/Garet-Book.otf);
+}
+
+@font-face {
+  font-family: Garet;
+  src: url(/assets/fonts/Garet-Heavy.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Rubik One;
+  src: url(/assets/fonts/RubikMonoOne-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f86caf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ca3f8c;
+}
+
+#homebtn {
+  font-weight: bold;
+}
+#homebtn:hover {
+  color: #ca3f8c;
+  cursor: pointer;
+}
