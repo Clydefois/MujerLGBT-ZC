@@ -12,7 +12,7 @@
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="services-page.css">
-
+    <script src="/pages/headerfooter/headfoot.js" defer></script>
 
     <title>Mujer - Services</title>
   </head>
@@ -30,7 +30,14 @@
         </a>
       </div>
 
-      <div class="navbutton-group">
+      <!-- Mobile Hamburger Menu -->
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+
+      <div class="navbutton-group" id="navButtonGroup">
         <button id="homebtn" class="homebtn">HOME</button>
         <div class="dropdown">
           <button class="dropbtn">
@@ -67,6 +74,33 @@
         </div>
       </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu-content">
+        <div class="mobile-menu-items">
+          <a href="#" class="mobile-menu-item" id="mobileHomeBtn">
+            HOME
+          </a>
+          <div class="mobile-menu-section">
+            <div class="mobile-section-header">ABOUT US</div>
+            <a href="#" class="mobile-menu-subitem" id="mobileServicesLink">SERVICES</a>
+            <a href="#" class="mobile-menu-subitem" id="mobileEventsLink">EVENTS</a>
+            <a href="#" class="mobile-menu-subitem" id="mobilePartnersLink">PARTNERS</a>
+          </div>
+          <div class="mobile-menu-section">
+            <div class="mobile-section-header">JOIN US</div>
+            <a href="#" class="mobile-menu-subitem" id="mobileDonateLink">DONATE</a>
+            <a href="#" class="mobile-menu-subitem" id="mobileApplicationLink">OPENINGS</a>
+          </div>
+          <div class="mobile-menu-section">
+            <div class="mobile-section-header">OTHER WORKS</div>
+            <a href="#" class="mobile-menu-subitem" id="mobileOtherworksLink">NEWSLETTER</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="headContainer">
       <p class = "headServices">SERVICES</p>
   </div>

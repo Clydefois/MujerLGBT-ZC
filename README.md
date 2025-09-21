@@ -23,7 +23,13 @@ This website was developed for **Mujer LGBTQ+**, an advocacy organization based 
 
 ## Development Team
 
-This project was developed by a dedicated team of **5 college students** working collaboratively to deliver a professional website solution.
+This project was developed by a dedicated team of **5 college students** working collaboratively to deliver a professional website solution:
+
+- **Kenneth Clyde A. Que**
+- **Jon Antonee Orillineda**
+- **Qhaleed Resham Kadiri**
+- **Joshua Guiritan**
+- **Donald Lee Novo**
 
 ## Project Features
 
