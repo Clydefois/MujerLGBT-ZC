@@ -3,9 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const leftNav = document.getElementById("left-nav");
   const rightNav = document.getElementById("right-nav");
   const section = document.querySelector(".section3");
-  const sectionWidth = section.offsetWidth;
-  const sectionHeight = section.offsetHeight;
-
+  
+  // Check if mobile view
+  const isMobile = () => window.innerWidth <= 768;
+  
+  let sectionWidth = section.offsetWidth;
+  let sectionHeight = section.offsetHeight;
 
   const leftMargin = -600; 
 
@@ -14,8 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const moveShapes = (direction) => {
+    // Completely disable movement on mobile - show all 4 people instead
+    if (isMobile()) {
+      return;
+    }
+    
     if (direction === "right") {
-
       const firstShape = shapes.shift();
       firstShape.style.transition = "none";
       firstShape.style.left = `${sectionWidth}px`;
@@ -26,11 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
         shapes.push(firstShape);
         shapes.forEach((shape, index) => {
           const shapeWidth = shape.offsetWidth;
-          shape.style.left = `${(index * (sectionWidth / shapes.length)) + (sectionWidth / 2 - shapeWidth / 2) + leftMargin}px`; // Adjust positions
+          shape.style.left = `${(index * (sectionWidth / shapes.length)) + (sectionWidth / 2 - shapeWidth / 2) + leftMargin}px`;
         });
       }, 50);
     } else if (direction === "left") {
-      
       const lastShape = shapes.pop();
       lastShape.style.transition = "none";
       lastShape.style.left = `-${lastShape.offsetWidth}px`;
@@ -47,14 +53,42 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  shapes.forEach((shape, index) => {
-    shape.style.position = "absolute";
-    shape.style.top = `${sectionHeight / 2 - shape.offsetHeight / 2}px`; // Center vertically
-    shape.style.left = `${(index * (sectionWidth / shapes.length)) + (sectionWidth / 2 - shape.offsetWidth / 2) + leftMargin}px`; // Center horizontally with left margin
-  });
+  const initializeShapes = () => {
+    sectionWidth = section.offsetWidth;
+    sectionHeight = section.offsetHeight;
+    
+    if (!isMobile()) {
+      shapes.forEach((shape, index) => {
+        shape.style.position = "absolute";
+        shape.style.top = `${sectionHeight / 2 - shape.offsetHeight / 2}px`;
+        shape.style.left = `${(index * (sectionWidth / shapes.length)) + (sectionWidth / 2 - shape.offsetWidth / 2) + leftMargin}px`;
+      });
+    } else {
+      // Reset styles for mobile
+      shapes.forEach((shape) => {
+        shape.style.position = "";
+        shape.style.top = "";
+        shape.style.left = "";
+      });
+    }
+  };
 
+  // Initialize shapes on load
+  initializeShapes();
+
+  // Reinitialize on window resize
+  window.addEventListener('resize', initializeShapes);
  
-  leftNav.addEventListener("click", () => moveShapes("left"));  // Left button moves shapes left
-  rightNav.addEventListener("click", () => moveShapes("right")); // Right button moves shapes right
+  // Add both click and touch events for better mobile support
+  const addEventListeners = (element, callback) => {
+    element.addEventListener("click", callback);
+    element.addEventListener("touchstart", (e) => {
+      e.preventDefault();
+      callback();
+    });
+  };
+
+  addEventListeners(leftNav, () => moveShapes("left"));
+  addEventListeners(rightNav, () => moveShapes("right"));
 });
 

@@ -509,7 +509,6 @@ h1 {
   margin: 0 160px;
   width: auto;
   height: auto;
-  rotate: 180deg;
   transform: rotate(180deg);
 }
 #right-nav {
@@ -520,26 +519,23 @@ h1 {
   margin: 0 160px;
   width: auto;
   height: auto;
-  transform: rotate(180deg);
+  transform: rotate(0deg); /* Fixed: should point right */
 }
 
 #right-nav:hover{
-  transform: scale(2.0);
+  transform: scale(2.0) rotate(0deg); /* Keep pointing right on hover */
   opacity: 80%;
 }
 #left-nav:hover {
-  transform: scale(2.0); 
-  rotate: 360deg;
+  transform: scale(2.0) rotate(180deg); /* Keep pointing left on hover */
   opacity: 80%;
 }
 #right-nav:active {
-  transform: rotate(180deg);
-  transform: scale(2.0);
+  transform: scale(2.0) rotate(0deg);
   opacity: 50%;
 }
 #left-nav:active {
-  transform: rotate(180deg);
-  transform: scale(2.0);
+  transform: scale(2.0) rotate(180deg);
   opacity: 50%;
 }
 
@@ -583,15 +579,286 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
-  .text-box {
-    width: 90%;
-    top: 15%;
+  /* Navigation */
+  .myNav {
+    padding: 0 20px;
+    height: 8vh;
   }
-
+  
+  .myNav ul {
+    gap: 15px;
+  }
+  
+  /* Section 1 - Hero */
+  .section1 {
+    height: 70vh;
+    margin-bottom: 50px;
+  }
+  
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    padding: 20px 30px;
+    border-radius: 20px;
+  }
+  
+  .text-box h1 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    padding-top: 10px;
+  }
+  
+  .text-box p {
+    font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  
   .header-button {
     width: 100%;
+    max-width: 250px;
     font-size: 14px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  
+  /* Section 2 - Main Content */
+  .section2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+  }
+  
+  .left-box {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Hide decorative ovals on mobile */
+  }
+  
+  /* Hide oval decorations on mobile to avoid conflicts */
+  .left-box::before,
+  .left-box::after,
+  .oval-decoration {
+    display: none;
+  }
+  
+  .help-spread {
+    margin: 20px auto;
+    margin-left: 20px;
+    width: auto;
+    max-width: 100%;
+    padding: 15px;
+
+
+  }
+  
+  .help-spread p {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    text-align: center;
+  }
+  
+  /* Hide rect-decoration on mobile */
+  .rect-decoration {
+    display: none;
+  }
+  
+  .right-box {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    height: auto;
+  }
+  
+  .right-box-title {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  .right-box-subtitle {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+  }
+  
+  /* Section 3 - Leaders */
+  .section3 {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+  
+  .section3-title {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    padding: 15px 10px;
+  }
+  
+  .section3-title p {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+  
+  /* Hide navigation buttons on mobile */
+  #left-nav, #right-nav {
+    display: none;
+  }
+  
+  .section3-title p {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin: 0;
+  }
+  
+  /* Display all 4 people in mobile grid layout */
+  .shape1, .shape2, .shape3, .shape4 {
+    position: relative;
+    width: 45%;
+    max-width: 180px;
+    height: 250px;
+    margin: 15px;
+    left: auto !important;
+    top: auto !important;
+    transform: none;
+    rotate: 0deg !important;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border: 3px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Create a flex container for the shapes */
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Create a grid for the shapes */
+  .section3::after {
+    content: '';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  
+  .shape2-name-inversed,
+  .shape4-name {
+    transform: rotate(0deg);
+    bottom: auto;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .shape1-name,
+  .shape3-name {
+    color: white;
+    font-weight: bold;
+  }
+  }
+  
+  .shape2-img, .shape4-img {
+    transform: translateX(-50%) scaleY(1);
+  }
+  
+  /* Section 4 - Partners */
+  .section4 {
+    height: auto;
+    padding: 30px 15px;
+    flex-direction: column;
+  }
+  
+  .section4-border-design {
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px;
+  }
+  
+  .section4-title {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 30px;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    text-align: center;
+  }
+  
+  .section4-logo {
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+    margin-top: 0;
+    display: block;
+  }
+  
+  /* Create a grid layout for logos on mobile */
+  .section4-border-design {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* Footer */
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .section1 {
+    height: 60vh;
+  }
+  
+  .text-box {
+    padding: 15px 20px;
+  }
+  
+  .text-box h1 {
+    font-size: clamp(1.2rem, 7vw, 2rem);
+  }
+  
+  .help-spread p {
+    font-size: clamp(1rem, 6vw, 1.5rem);
+  }
+  
+  .shape1, .shape2, .shape3, .shape4 {
+    width: 42%;
+    max-width: 160px;
+    height: 220px;
+    margin: 10px;
+  }
+  
+  .section4-logo {
+    width: 100px;
+    height: 100px;
   }
 }
 
